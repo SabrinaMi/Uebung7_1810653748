@@ -10,7 +10,9 @@ public class Aufgabe2
 
                 String wert1 = JOptionPane.showInputDialog("Bitte geben Sie einen Wert ein"); //der Nutzer wird nach einem Wert gefragt
 
-                if(wert1.matches("[0-9]+")){ //nun nehme ich eine if-else abfrage her, die schaut ob i Zahl (int) oder einen anderen Wert habe
+                if(wert1.matches("[0-9]+")){
+                    //matches überprüft die Eingabe mit der Bedingung (regex)
+                    // nun nehme ich eine if-else abfrage her, die schaut ob i Zahl (int) oder einen anderen Wert habe
                     throw new Exception(); // nun macht mir das System eine eigene Exception
                 }else{
                     System.out.println(wert1 + " ungültige Eingabe!"); //wird ausgegeben wenn das System keine Zahl ist, bzw. wenn der Wert ungültig ist
